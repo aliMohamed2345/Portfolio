@@ -1,0 +1,255 @@
+:root {
+  --primary-bg-color: #1b1b1d;
+  --secondary-bg-color: #242526;
+  --Territory-bg-color: #495057;
+  --primary-text-color: #c4c9ce;
+  --bs-cyan: #0dcaf0;
+  --bs-cyan-hover: #0aa2c0;
+  --bs-danger: #dc3545;
+}
+
+@keyframes RotateCard {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px !important;
+  color: var(--primary-text-color) !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-image: url("../../public/StarsBackground.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 500vh;
+  color: var(--primary-text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+@media (max-width: 360px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  h5,
+  h6 {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.75em;
+  }
+  h5,
+  h6 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  h5,
+  h6 {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 769px) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  h3 {
+    font-size: 3em;
+  }
+  h4 {
+    font-size: 2.5em;
+  }
+  h5,
+  h6 {
+    font-size: 2em;
+  }
+}
+.side-bar {
+  min-width: 23vw;
+  background-color: var(--secondary-bg-color);
+}
+.side-bar .social {
+  color: var(--bs-cyan);
+}
+.side-bar .social .social:hover {
+  color: var(--bs-cyan-hover);
+  transition: 1s;
+}
+
+.options {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.options .options:hover {
+  background-color: var(--bs-cyan-hover);
+}
+.options .option:hover {
+  background-color: var(--bs-cyan-hover);
+  transition: 0.3s ease all;
+  box-shadow: var(--bs-cyan) 0px 0px 10px;
+}
+
+.separator {
+  height: 2px;
+  width: 200%;
+  background-color: white;
+}
+
+.separator-section {
+  transition: 0.3s ease all;
+}
+.separator-section:hover {
+  background-color: var(--bs-cyan-hover);
+}
+
+button {
+  background-color: #07182e;
+  border: 2px solid var(--bs-cyan);
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 1.5px;
+  background-color: var(--bs-cyan-hover);
+  color: white;
+  box-shadow: var(--bs-cyan) 0px 0px 10px;
+}
+
+button:active {
+  letter-spacing: 1.5px;
+  background-color: var(--bs-cyan-hover);
+  color: white;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.main {
+  background-color: var(--secondary-bg-color);
+}
+
+.name {
+  font-size: 50px;
+}
+
+.cards .card {
+  width: 190px;
+  height: 254px;
+  place-content: center;
+  place-items: center;
+  transition: 0.3s ease all;
+}
+.cards .card:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, var(--bs-cyan), var(--bs-cyan));
+  height: 130%;
+  animation: RotateCard 3s linear infinite;
+  transition: all 0.2s linear;
+}
+.cards .card:after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}
+.cards .card:active {
+  transform: scale(0.95);
+}
+
+.portfolio-section .tab-values {
+  background-color: #07182e;
+}
+.portfolio-section .skills .skill {
+  cursor: pointer;
+  min-width: 250px;
+  background-color: #07182e;
+}
+.portfolio-section .skills .skill:hover .more-info {
+  opacity: 1;
+}
+.portfolio-section .skills .skill .more-info {
+  transition: 0.3s ease all;
+  opacity: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4705882353);
+  height: 200px;
+}/*# sourceMappingURL=globals.css.map */
