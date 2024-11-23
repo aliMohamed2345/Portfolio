@@ -3,6 +3,7 @@ import Separator from './Separator'
 import About from './About'
 import Skills from './Skills'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
 const Main = () => {
     return (<div className="main position-relative col-12 col-md-9 col-sm-9 rounded-3 ">
         <Separator title="Home" id='home' />
@@ -13,6 +14,7 @@ const Main = () => {
         <Skills />
         <Separator title="Portfolio" id='portfolio' />
         <Portfolio />
+        <Contact />
     </div>);
 }
 

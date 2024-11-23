@@ -1,5 +1,5 @@
 :root {
-  --primary-bg-color: #1b1b1d;
+  --primary-bg-color: #07182e;
   --secondary-bg-color: #242526;
   --Territory-bg-color: #495057;
   --primary-text-color: #c4c9ce;
@@ -14,6 +14,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
   }
 }
 p,
@@ -44,7 +54,6 @@ body {
   background-image: url("../../public/StarsBackground.jpg");
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 500vh;
   color: var(--primary-text-color);
 }
 
@@ -139,7 +148,7 @@ a {
 }
 .side-bar {
   min-width: 23vw;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 .side-bar .social {
   color: var(--bs-cyan);
@@ -176,8 +185,8 @@ a {
   background-color: var(--bs-cyan-hover);
 }
 
-button {
-  background-color: #07182e;
+.btn {
+  background-color: var(--primary-bg-color);
   border: 2px solid var(--bs-cyan);
   color: white;
   cursor: pointer;
@@ -185,14 +194,14 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+.btn:hover {
   letter-spacing: 1.5px;
   background-color: var(--bs-cyan-hover);
   color: white;
   box-shadow: var(--bs-cyan) 0px 0px 10px;
 }
 
-button:active {
+.btn:active {
   letter-spacing: 1.5px;
   background-color: var(--bs-cyan-hover);
   color: white;
@@ -201,7 +210,7 @@ button:active {
 }
 
 .main {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 .name {
@@ -227,7 +236,7 @@ button:active {
 .cards .card:after {
   content: "";
   position: absolute;
-  background: #07182e;
+  background: var(--primary-bg-color);
   inset: 5px;
   border-radius: 15px;
 }
@@ -235,13 +244,26 @@ button:active {
   transform: scale(0.95);
 }
 
-.portfolio-section .tab-values {
-  background-color: #07182e;
+.portfolio-section {
+  max-height: 600px;
+  background-color: var(--primary-bg-color);
+}
+.portfolio-section .tab-values button {
+  transition: 0.3s ease all;
+  background-color: var(--primary-bg-color);
+  color: var(--bs-cyan);
+}
+.portfolio-section .tab-values button:hover, .portfolio-section .tab-values button.active {
+  color: var(--primary-bg-color);
+  background-color: var(--bs-cyan);
+}
+.portfolio-section .skills {
+  background-color: var(--bs-cyan);
 }
 .portfolio-section .skills .skill {
   cursor: pointer;
-  min-width: 250px;
-  background-color: #07182e;
+  min-width: 275px;
+  background-color: var(--primary-bg-color);
 }
 .portfolio-section .skills .skill:hover .more-info {
   opacity: 1;
@@ -252,4 +274,80 @@ button:active {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4705882353);
   height: 200px;
+}
+.portfolio-section .skills .skill .more-info .icons a {
+  transition: 0.3s ease all;
+  width: 50px;
+  height: 50px;
+  color: var(--bs-cyan);
+  background-color: var(--primary-bg-color);
+}
+.portfolio-section .skills .skill .more-info .icons a:hover {
+  background-color: var(--bs-cyan);
+  color: var(--primary-bg-color);
+}
+
+.contact-section .contact-info .contact-icon {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease all;
+  border: 1px solid var(--bs-cyan);
+}
+.contact-section .contact-info .contact-icon:hover {
+  background-color: var(--bs-cyan);
+}
+.contact-section .form {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+.contact-section .form label {
+  position: relative;
+}
+.contact-section .form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+.contact-section .form label .input:-moz-placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+.contact-section .form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+.contact-section .form label .input:focus + span, .contact-section .form label .input:valid + span {
+  color: var(--bs-cyan);
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.contact-section .form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease all;
+  border: 1px solid var(--bs-cyan);
+  transform: 0.3s ease all;
+  background-color: var(--primary-color);
+}
+.submit:hover {
+  background-color: var(--bs-cyan);
 }/*# sourceMappingURL=globals.css.map */
