@@ -12,8 +12,7 @@ const Home = () => {
             </div>
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column flex-md-row flex-sm-row gap-2 my-3">
-            <button className="p-3  d-block  rounded-pill text-bold my-1 text-capitalize border-0">Download CV</button>
-            <button className="p-3  d-block  rounded-pill text-bold my-1 text-capitalize border-0">Contact Me</button>
+            <button className="p-3 btn rounded-pill my-5 position-relative overflow-hidden button text-white">Download CV</button>
         </div>
 
     </>)

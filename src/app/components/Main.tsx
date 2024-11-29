@@ -5,7 +5,7 @@ import Skills from './Skills'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 const Main = () => {
-    return (<div className="main position-relative col-12 col-md-9 col-sm-9 rounded-3 ">
+    return (<div className="main position-relative  rounded-3 overflow-hidden">
         <Separator title="Home" id='home' />
         <Home />
         <Separator title="About Me" id='about' />

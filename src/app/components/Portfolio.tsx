@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { FaGithub, FaRegEye } from "react-icons/fa";
 import Image from 'next/image'
 const Portfolio = () => {
-    console.log(Projects);
     const [tabValue, setTabValue] = useState<string>("All")
     const [Skills, setSkills] = useState<ProjectsProps[]>([])
     //useEffect for updating the skills depend on the selected tab

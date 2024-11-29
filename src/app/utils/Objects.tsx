@@ -7,18 +7,20 @@ import { FaHome, FaUser, FaPhone } from "react-icons/fa";
 import { BsBackpack4Fill } from "react-icons/bs";
 import { BiSolidCategory } from "react-icons/bi";
 import { ReactNode } from "react";
-import  Fzakerr from '../../../public/Fzakerr App.jpg'
-import  Calculator  from '../../../public/Basic Calculator.jpg'
-import  Translator  from '../../../public/BasicTranslator.jpg'
-import  ColorFlipper  from '../../../public/Color Flipper.jpg'
-import  FirstTemplate  from '../../../public/First Template.jpg'
-import  SecondTemplate from '../../../public/Second Template.jpg'
-import  LoginPage  from '../../../public/Login Page.jpg'
-import  StopWatch  from '../../../public/StopWatch.jpg'
-import  TicTacToeGame  from '../../../public/Tic Tac Toe Game.jpg'
-import  ClipBoardLandingPage  from '../../../public/clipboard-landing-page-front-end-mentor.jpg'
-import  SocialLinksProfile  from '../../../public/social-links-profile-front-end-mentor.jpg'
-import  ToDoList  from '../../../public/To-Do List.jpg'
+import Fzakerr from '../../../public/Fzakerr App.jpg'
+import Calculator from '../../../public/Basic Calculator.jpg'
+import Translator from '../../../public/BasicTranslator.jpg'
+import ColorFlipper from '../../../public/Color Flipper.jpg'
+import FirstTemplate from '../../../public/First Template.jpg'
+import SecondTemplate from '../../../public/Second Template.jpg'
+import LoginPage from '../../../public/Login Page.jpg'
+import StopWatch from '../../../public/StopWatch.jpg'
+import TicTacToeGame from '../../../public/Tic Tac Toe Game.jpg'
+import ClipBoardLandingPage from '../../../public/clipboard-landing-page-front-end-mentor.jpg'
+import SocialLinksProfile from '../../../public/social-links-profile-front-end-mentor.jpg'
+import ToDoList from '../../../public/To-Do List.jpg'
+import QuizGame from '../../../public/Quiz_Game.jpg'
+
 const IconSizes = { width: 50, height: 50 }
 export interface SocialMediaProps {
     name: string,
@@ -122,13 +124,7 @@ export interface ProjectsProps {
 }
 
 export const Projects: ProjectsProps[] = [
-    {
-        ProjectName: "Fazkerr App",
-        class: "React",
-        DemoLink: "https://fazaker-app-gm8y.vercel.app/",
-        githubRepo: "https://github.com/aliMohamed2345/fazaker-App",
-        ProjectImageSrc: Fzakerr
-    },
+
     {
         ProjectName: "Basic Calculator",
         class: "JS",
@@ -204,5 +200,19 @@ export const Projects: ProjectsProps[] = [
         DemoLink: "https://social-links-profile-front-end-mentor-1.vercel.app/",
         githubRepo: "https://github.com/aliMohamed2345/Social-Links-Profile-front-end-mentor-",
         ProjectImageSrc: SocialLinksProfile
+    },
+    {
+        ProjectName: "Quiz Game",
+        class: "React",
+        DemoLink: "https://quiz-game--theta.vercel.app/",
+        githubRepo: "https://github.com/aliMohamed2345/Quiz_Game",
+        ProjectImageSrc: QuizGame
+    },
+    {
+        ProjectName: "Fazkerr App",
+        class: "React",
+        DemoLink: "https://fazaker-app-gm8y.vercel.app/",
+        githubRepo: "https://github.com/aliMohamed2345/fazaker-App",
+        ProjectImageSrc: Fzakerr
     },
 ]
