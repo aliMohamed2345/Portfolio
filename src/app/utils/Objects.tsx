@@ -20,7 +20,7 @@ import ClipBoardLandingPage from '../../../public/clipboard-landing-page-front-e
 import SocialLinksProfile from '../../../public/social-links-profile-front-end-mentor.jpg'
 import ToDoList from '../../../public/To-Do List.jpg'
 import QuizGame from '../../../public/Quiz_Game.jpg'
-
+import Pixels from '../../../public/Pixels.jpg'
 const IconSizes = { width: 50, height: 50 }
 export interface SocialMediaProps {
     name: string,
@@ -214,5 +214,12 @@ export const Projects: ProjectsProps[] = [
         DemoLink: "https://fazaker-app-gm8y.vercel.app/",
         githubRepo: "https://github.com/aliMohamed2345/fazaker-App",
         ProjectImageSrc: Fzakerr
+    },
+    {
+        ProjectName: "Pixels App",
+        class: "React",
+        DemoLink: "https://pixels-application.netlify.app/",
+        githubRepo: "https://github.com/aliMohamed2345/Pixels-App",
+        ProjectImageSrc: Pixels
     },
 ]

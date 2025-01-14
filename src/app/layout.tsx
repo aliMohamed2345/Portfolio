@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio Game",
+  title: "Ali Mohamed Ali",
   description: "Ali Mohamed Ali Mansor Portfolio",
 };
 
