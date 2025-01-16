@@ -218,7 +218,7 @@ export const Projects: ProjectsProps[] = [
     {
         ProjectName: "Pixels App",
         class: "React",
-        DemoLink: "https://pixels-application.netlify.app/",
+        DemoLink: "https://pixels-application.vercel.app/",
         githubRepo: "https://github.com/aliMohamed2345/Pixels-App",
         ProjectImageSrc: Pixels
     },
