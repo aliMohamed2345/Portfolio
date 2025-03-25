@@ -168,7 +168,7 @@ a {
   background-color: var(--primary-bg-color);
 }
 .side-bar.active {
-  left: -400px;
+  left: -500px;
 }
 
 button.close-btn {
